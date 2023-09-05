@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootNode" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.stockmanage.controller.DashboardFormController">
+   <children>
+      <AnchorPane fx:id="formPane" layoutX="150.0" prefHeight="400.0" prefWidth="450.0" style="-fx-background-color: EEF6EA;">
+         <children>
+            <Label layoutX="164.0" layoutY="50.0" text="Dashboard">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="91.0" layoutY="244.0" prefHeight="100.0" prefWidth="270.0" style="-fx-background-color: yellow; -fx-background-radius: 50;" text="Customer Count:&#10;596" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="91.0" layoutY="124.0" prefHeight="100.0" prefWidth="270.0" style="-fx-background-color: green; -fx-background-radius: 50;" text="Orders Completed:&#10;3524" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="navPane" prefHeight="400.0" prefWidth="150.0" style="-fx-background-color: F2EAF6;">
+         <children>
+            <Button fx:id="dashboardBtn" layoutX="30.0" layoutY="60.0" mnemonicParsing="false" onAction="#dashboardBtnOnAction" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: #99B85A;" text="Dashboard">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="customerBtn" layoutX="30.0" layoutY="120.0" mnemonicParsing="false" onAction="#customerBtnOnAction" prefWidth="90.0" style="-fx-background-color: linear-gradient(to top, #A8C272, #D4E1BA);" text="Customer">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="itemBtn" layoutX="30.0" layoutY="180.0" mnemonicParsing="false" onAction="#itemBtnOnAction" prefWidth="90.0" style="-fx-background-color: linear-gradient(to top, #A8C272, #D4E1BA);" text="Item">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="supplierBtn" layoutX="30.0" layoutY="240.0" mnemonicParsing="false" onAction="#supplierBtnOnAction" prefWidth="90.0" style="-fx-background-color: linear-gradient(to top, #A8C272, #D4E1BA);" text="Supplier">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="logoutBtn" layoutX="30.0" layoutY="343.0" mnemonicParsing="false" onAction="#LogoutBtnOnAction" prefWidth="90.0" style="-fx-background-color: linear-gradient(to top, #C44444, #D57A7A);" text="Logout">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="16.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/logout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
